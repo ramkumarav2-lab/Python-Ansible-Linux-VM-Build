@@ -1,0 +1,7 @@
+- name: Install SentinelOne agent
+  yum:
+    name: sentinel-agent
+    state: present
+
+- name: Assign Sentinel site key
+  command: /opt/sentinel/bin/sentinelctl set-site-key ABCD1234
