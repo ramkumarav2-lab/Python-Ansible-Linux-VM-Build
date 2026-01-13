@@ -1,0 +1,7 @@
+- name: Apply latest patches
+  yum:
+    name: "*"
+    state: latest
+
+- name: Reboot if required
+  reboot:
