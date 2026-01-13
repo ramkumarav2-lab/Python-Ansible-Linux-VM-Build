@@ -1,0 +1,9 @@
+- name: Install Qualys agent
+  yum:
+    name: qualys-cloud-agent
+    state: present
+
+- name: Start Qualys service
+  service:
+    name: qualys-cloud-agent
+    state: started
