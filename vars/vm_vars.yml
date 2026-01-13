@@ -1,0 +1,15 @@
+vcenter_hostname: vcenter.example.com
+vcenter_username: administrator@vsphere.local
+vcenter_password: password
+datacenter: DC1
+cluster: PROD
+datastore: datastore1
+network: VM_Network
+template: rhel9-template
+
+vm_name: test-vm-01
+vm_ip: 192.168.1.50
+vm_netmask: 255.255.255.0
+vm_gateway: 192.168.1.1
+dns_servers:
+  - 8.8.8.8
