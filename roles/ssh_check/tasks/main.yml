@@ -1,0 +1,5 @@
+- name: Ensure SSH is running
+  service:
+    name: sshd
+    state: started
+    enabled: yes
